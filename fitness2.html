@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jensen Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fitness2.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+
+  
+    <section id="hero">  <!--This section is for the nav bar-->
+        <header>
+          <div class="container">
+            <div id="header-logo-mobile" class="top-gym-logo">
+              <a href="#">Top<br/>Gym</a>
+            </div>
+    
+            <nav>
+              <ul class="flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Classes</a></li>
+                <li id="header-logo" class="top-gym-logo">
+                  <a href="#">Top<br/>Gym</a>
+                </li>
+                <li><a href="#">Instructions</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                  <button id="search"><span class="fa fa-search"></span></button>
+                </li>
+              </ul>
+            </nav>
+    
+            <button id="hamburger-menu">
+              <span class="strip"></span>
+              <span class="strip"></span>
+              <span class="strip"></span>
+            </button>
+          </div>
+        </header>
+    
+        <div id="hero-slider">
+          <div class="hero-slide-item" style="background-image:url('https://onclickwebdesign.com/wp-content/uploads/main-slider-1.jpg');">
+            <div class="hero-slider-marketing">
+              <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
+              <h2>Be Fit. Top Gym</h2>
+              <button>More Info</button>
+            </div>
+          </div>
+    
+          <div class="hero-slide-item" style="background-image:url('https://onclickwebdesign.com/wp-content/uploads/main-slider-2.jpg');">
+            <div class="hero-slider-marketing">
+              <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
+              <h2>Be Fit. Top Trainer</h2>
+              <button>More Info</button>
+            </div>
+          </div>
+    
+          <div class="hero-slide-item" style="background-image:url('https://onclickwebdesign.com/wp-content/uploads/main-slider-3.jpg');">
+            <div class="hero-slider-marketing">
+              <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
+              <h2>Be Fit. Top Body</h2>
+              <button>More Info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        // document ready function
+        $(function () {
+          // store jquery references to elements in const variables
+          
+    
+          // initialize hero slider
+          $('#hero-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            pauseOnFocus: false,
+            pauseOnHover: false,
+            fade: true,
+            speed: 1000,
+            cssEase: 'linear'
+          });
+    
+        
+      </script>
+      
+    </body>
+</html>
