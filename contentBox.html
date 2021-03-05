@@ -22,8 +22,8 @@
         </label>
      
         <ul>
-        <li><a class="active" href="FItness.html">Home</a></li>
-        <li><a href="contentBox.html">Traning Guide</a></li>
+        <li><a  href="FItness.html">Home</a></li>
+        <li><a class="active" href="contentBox.html">Traning Guide</a></li>
         <li><a href="#">Find a gym</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">About us</a></li>
@@ -32,65 +32,69 @@
 </section>
     <img src="https://wallpapercave.com/wp/wp2639532.jpg" alt="Flowers in Chania" width="100%" height="700px">
 
-    <div class="cards-list">
+    <div class="BodyPartsCardList">
   
-<div class="card 1">
-  <div class="card_image"> <img src="../Pic/cheast.jpg" /> </div>
+<div class="BodyPartCard 1">
+  <div class="card_image"> 
+      <img src="../Pic/cheast.jpg" /> </div>
   <div class="card_title title-white">
-    <p>Card Title</p>
+    <p>Cheast</p>
   </div>
 </div>
 
-  <div class="card 2">
+  <div class="BodyPartCard 2">
   <div class="card_image">
-    <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
+    <img src="../Pic/shoulder.jpg" />
     </div>
   <div class="card_title title-white">
-    <p>Card Title</p>
+    <p> Shou</p>
   </div>
 </div>
 
-<div class="card 3">
+<div class="BodyPartCard 3">
   <div class="card_image">
-    <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+    <img src="../abs.png" />
   </div>
   <div class="card_title">
-    <p>Card Title</p>
+    <p>Abs</p>
   </div>
 </div>
   
-  <div class="card 4">
+  <div class="BodyPartCard 4">
   <div class="card_image">
-    <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+    <img src="../training.png" />
     </div>
   <div class="card_title title-black">
-    <p>Card Title</p>
+    <p>Back</p>
   </div>
   </div>
         
-         <div class="card 2">
+         <div class="BodyPartCard 2">
   <div class="card_image">
-    <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
+    <img src="" />
     </div>
   <div class="card_title title-white">
-    <p>Card Title</p>
+    <p>Legs</p>
   </div>
 </div>
 
         
-         <div class="card 2">
+         <div class="BodyPartCard 2">
   <div class="card_image">
-    <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
+    <img src="" />
     </div>
   <div class="card_title title-white">
-    <p>Card Title</p>
+    <p>Arms</p>
   </div>
 </div>
         
 </div>
     
     <style>
-        .cards-list {
+      body{
+        background-color: rgb(50, 0, 129);
+      }
+        .BodyPartsCardList {
   
   width: 100%;
   display: flex;
@@ -98,30 +102,30 @@
   flex-wrap: wrap;
 }
 
-.card {
+.BodyPartCard {
   margin: 40px 30px;
-  width: 550px;
-  height: 550px;
+  width: 400px;
+  height: 400px;
   border-radius: 40px;
 box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
   cursor: pointer;
   transition: 0.4s;
 }
 
-.card .card_image {
+.BodyPartCard .card_image {
   width: inherit;
   height: inherit;
   border-radius: 40px;
 }
 
-.card .card_image img {
+.BodyPartCard .card_image img {
   width: inherit;
   height: inherit;
   border-radius: 40px;
   object-fit: cover;
 }
 
-.card .card_title {
+.BodyPartCard .card_title {
   text-align: center;
   border-radius: 0px 0px 40px 40px;
   font-family: sans-serif;
@@ -131,7 +135,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   height: 40px;
 }
 
-.card:hover {
+.BodyPartCard:hover {
   transform: scale(0.9, 0.9);
   box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
     -5px -5px 30px 15px rgba(0,0,0,0.22);
@@ -152,16 +156,16 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   }
 }
         @media (max-width: 1500px){
-            .card{
+            .BodyPartCard{
         margin: 30px auto;
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
   
     }
         }
         
 @media (max-width: 950px){
-    .card{
+    .BodyPartCard{
         margin: 30px auto;
   width: 300px;
   height: 300px;
@@ -171,7 +175,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
         }
         
         @media (max-width: 500px){
-    .card{
+    .BodyPartCard{
         margin: 30px auto;
   width: 150px;
   height: 150px;
@@ -198,7 +202,118 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 }
 */
     </style>
+    <div class= "BodyPartsCardList">
+      <div class="BodyPart Card1">
+        <div class="container">
+          <img src ="../Pic/shoulder.jpg" alt="shoulder">
+          
+        </div>
+        <div class="details">
+          <h3> Shoulder </h3>
+          
+        </div>
+      </div>
+      
+      <div class="BodyPart Card2">
+        <div class="container">
+          <img src ="../Pic/abs.jpg" alt="shoulder">
+          
+        </div>
+        <div class="details">
+          <h3> Shoulder </h3>
+          
+        </div>
+      </div>
+
+      <div class="BodyPart Card3">
+        <div class="container">
+          <img src ="../Pic/cheast.jpg" alt="shoulder">
+          
+        </div>
+        <div class="details">
+          <h3> Shoulder </h3>
+          
+        </div>
+      </div>
+
+      <div class="BodyPart Card3">
+        <div class="container">
+          <img src ="../Pic/bg.jpg" alt="shoulder">
+          
+        </div>
+        <div class="details">
+          <h3> Shoulder </h3>
+          
+        </div>
+      </div>
+
+      <div class="BodyPart Card3">
+        <div class="container">
+          <img src ="../Pic/shoulder.jpg" alt="shoulder">
+          
+        </div>
+        <div class="details">
+          <h3> Shoulder </h3>
+         <button>yo </button>
+        </div>
+      </div>
+
+      <div class="BodyPart Card3">
+        <div class="container">
+          <img src ="../training.png" alt="shoulder">
+          
+        </div>
+        <div class="details">
+          <h3> Shoulder </h3>
+  
+        </div>
+      </div>
+    </div>
     
+  <style>
+  .BodyPartsCardList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+
+  }
+  .BodyPart{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0,0, 0.18);
+  }
+
+  .container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+  }
+.container img{
+width: 100%;
+display: block;
+border-radius: 20px 20px 0 0;
+height: 300px;
+
+}
+
+.details{
+padding: 20px 10px; 
+}
+
+.details>h3{
+color: #ffffff;
+font-weight:600 ;
+font-size: 18px;
+margin: 10px 0 15px 0;
+}
+
+.details>p{
+color: aliceblue;
+font-size: 15px;
+line-height: 30px;
+font-weight: 400;
+}
+  </style>
 </body>
 
 </html

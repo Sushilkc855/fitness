@@ -10,12 +10,12 @@
 }
 
 body {
-  font-family: 'Roboto', 'Helvetica', 'Sans-serif';  /*front families*/
+  font-family: 'Roboto', 'Helvetica', 'Sans-serif';
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  font-weight: 400; /*makes fonts a little bolder*/
-  line-height: 1.7; /*space between lines */
+  font-weight: 400;
+  line-height: 1.7;
   color: #353535;
 }
 
@@ -54,7 +54,7 @@ ul {
   padding: 0;
 }
 
-button { /*every button tag*/
+button {
   cursor: pointer;
   background: #233EDE;
   color: #fff;
@@ -73,7 +73,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline; /*when you hover over a link you see a under line */ 
+  text-decoration: underline;
 }
 
 p {

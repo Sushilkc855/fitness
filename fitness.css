@@ -5,7 +5,9 @@
     list-style: none;  /* takes outs the dots   */
     box-sizing: border-box; /* *all elements are sized in this more intuitive way */
   }
-  
+  html {
+    scroll-behavior: smooth;
+}
   body{
     font-family: montserrat;
   }
@@ -22,6 +24,15 @@
   
 }
 
+span{
+  opacity: 0;
+  transition: all 0.4s ease;
+  
+}
+span.fade{
+  opacity: 1;
+  color:rgb(207, 135, 0);
+}
   .navigationBar{
     background:#000000;  /* the navigation bar*/
     height: 130px;
@@ -32,8 +43,10 @@
   }
   
   label.topLogo{
-    padding-left:100px;  /* style of logo*/
+    padding-left:30px;  /* style of logo*/
+    line-height: 180px;
   }
+
   
   .navigationBar ul{
     float: right;               
@@ -75,9 +88,10 @@
   
   
   @media (max-width: 952px){  /*second level of repoens*/
-    label.topLogo{
-      font-size: 25px;
-      padding-left: 45px;  /*Everythin in the nav becomes a litte smallerl looks better */
+    label.topLogo img{
+    width: 150px;
+        height: 55px;
+      padding-left: 0px;  /*Everythin in the nav becomes a litte smallerl looks better */
     }
     .navigationBar ul li a{
       font-size: 15px;
@@ -140,7 +154,7 @@
   
   
   .fixed-bg {
-      background-image: url("https://onclickwebdesign.com/wp-content/uploads/main-slider-3.jpg"); /*background picture */
+      background-image: url("../Pic/bg.jpg"); /*background picture */
       min-height: 800px;  /*minimum height*/
       background-attachment: fixed;  /* The background image will not scroll with the page */
       background-position: center center;
@@ -160,7 +174,7 @@
       padding-top: 520px;
       padding-left: 0px;
       padding-bottom: 280px;
-      background: rgba(114, 114, 114, 0.2); /*A little transparent*/
+      background: rgba(0, 0, 0, 0.3); /*A little transparent*/
   
   }
   

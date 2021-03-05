@@ -5,6 +5,7 @@
     <title>Jensen Education</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/fitness.css">
+   
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   </head>
   <body>
@@ -17,12 +18,12 @@
         <i class="fas fa-bars"></i> <!-- Includes the group meny icon --> 
       </label>
      
-        <label class="topLogo"> <img src="https://www.jenseneducation.se/themes/jensen/css/graphics/logo-gold-jensen-education.svg" alt="JENSEN EDUCATION" width="80px" height="76px" >
+        <label class="topLogo"> <img src="../Pic/logo.png" alt="Logo" width="250px" height="75px" >
         </label>
      
         <ul>
         <li><a class="active" href="FItness.html">Home</a></li>
-        <li><a href="test.html">Traning Guide</a></li>
+        <li><a href="contentBox.html">Traning Guide</a></li>
         <li><a href="#">Find a gym</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">About us</a></li>
@@ -33,14 +34,15 @@
 <div class="fixed-bg">  <!--Everythink inside this so it is just the background.  -->     
 <div class="hi-z" >
 <div class="kicker">
-    <h1>Turn fat, To fit</h1>
+  
+    <h1 class="java">No Pain. No Gain.</h1>
    				  
     </div>				  					  
 					
     
 </div>
 </div>
-
+<script src="fitness.js"></script>
       
       
       <div class="mid">
@@ -59,167 +61,176 @@
       </ul> 
       
       </div>
-    <div class="bodypartcards-list">
-  
-<div class="partscard 1">
-  <div class="card_image"> <img src="../Pic/cheast.jpg" /> </div>
-  <div class="card_title title-white">
-    <p>Cheast</p>
-  </div>
-</div>
-
-  <div class="partscard 2">
-  <div class="card_image">
-    <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
-    </div>
-  <div class="card_title title-white">
-    <a href="">Card Title</a>
-  </div>
-</div>
-
-<div class="partscard 3">
-  <div class="card_image">
-    <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
-  </div>
-  <div class="card_title">
-    <p>Card Title</p>
-  </div>
-</div>
-  
-  <div class="partscard 4">
-  <div class="card_image">
-    <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
-    </div>
-  <div class="card_title title-black">
-    <p>Card Title</p>
-  </div>
-  </div>
-        
-         <div class="partscard 2">
-  <div class="card_image">
-    <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
-    </div>
-  <div class="card_title title-white">
-    <p>Card Title</p>
-  </div>
-</div>
-
-        
-         <div class="partscard 2">
-  <div class="card_image">
-    <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
-    </div>
-  <div class="card_title title-white">
-    <p>Card Title</p>
-  </div>
-</div>
-        
-</div>
-    
-    <style>
-        .bodypartcards-list {
-  z-index: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.partscard {
-  margin: 40px 30px;
-  width: 400px;
-  height: 400px;
-  border-radius: 40px;
-box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.partscard .card_image {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
-}
-
-.partscard .card_image img {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
-  object-fit: cover;
-}
-
-.partscard .card_title {
-  text-align: center;
-  border-radius: 0px 0px 40px 40px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
-}
-
-.partscard:hover {
-  transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
-}
-
-.title-white {
-  color: white;
-}
-
-.title-black {
-  color: black;
-}
-
-@media all and (max-width: 500px) {
-  .card-list {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
-  }
-}
-        
-        
-        
-@media (max-width: 950px){
-    .partscard{
-        margin: 30px auto;
-  width: 300px;
-  height: 300px;
-  
-    }
-    
+      
+      <style>
+        .BodyPartsCardList{
+            display: flex;
+            justify-content: space-around;
+          flex-wrap: wrap;
+          width: 100%;
+          background-color: rgb(0, 55, 77);
         }
-        
-        @media (max-width: 615px){
-    .partscard{
-        margin: 30px auto;
-  width: 180px;
-  height: 180px;
-
-  
-    }
-    
+        .BodyPartCard:hover {
+          transform: scale(0.9, 0.9);
+          box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+            -5px -5px 30px 15px rgba(0,0,0,0.22);
         }
-    
-/*
-.card {
-  margin: 30px auto;
-  width: 300px;
-  height: 300px;
-  border-radius: 40px;
-  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-repeat: no-repeat;
-box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-  transition: 0.4s;
-}
-*/
-    </style>
-
- 
+             .BodyPartCard{
+                  width: 400px;
+                  margin: 20px;
+                  border-radius: 10%;
+            box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+              cursor: pointer;
+              transition: 0.4s;
+                 }
+             
+             .BodyPartImage img{
+               width: 100%;
+               border-radius: 10%;
+               height: 300px;
+             
+              
+              }
+             
+             .BodyPartTitle{
+              color: cornsilk;
+               text-align: center;
+               padding: 10px;
+               
+              }
+           
+             
+             .BodyPartDes{
+              
+               text-align: center;
+              
+              
+                     
+             }
+             .BodyPartDes button{
+               
+               margin-bottom: 10px;
+               background-color: white;
+               border: 1px solid black;
+               border-radius: 5px;
+               padding:10px;
+             }
+             .BodyPartDes  button:hover{
+               background-color: black;
+               color: white;
+               transition: .5s;
+               cursor: pointer;
+             }
+             
+             </style>
+             <body>
+             
+             <div class="BodyPartsCardList">
+             
+              <!--cards -->
+             
+             <div class="BodyPartCard">
+             
+             <div class="BodyPartImage">
+                <img src="../Pic/abs.png">
+             </div>
+             <div class="BodyPartTitle">
+              <h1>
+             Abs</h1>
+             </div>
+             <div class="BodyPartDes">
+              
+             <button>See Tranings</button>
+             </div>
+             </div>
+             <!--cards -->
+             
+             
+             <div class="BodyPartCard">
+             
+             <div class="BodyPartImage">
+                <img src="../Pic/training.png">
+             </div>
+             <div class="BodyPartTitle">
+              <h1>Arms
+             </h1>
+             </div>
+             <div class="BodyPartDes">
+              
+             <button>See Tranings</button>
+             </div>
+             </div>
+             <!--cards -->
+             
+             
+             <div class="BodyPartCard">
+             
+             <div class="BodyPartImage">
+                <img src="../Pic/back.png">
+             </div>
+             <div class="BodyPartTitle">
+              <h1>
+            Back</h1>
+             </div>
+             <div class="BodyPartDes">
+             
+             <button>See Tranings</button>
+             </div>
+             </div>
+             <!--cards -->
+             
+             
+             <div class="BodyPartCard">
+             
+             <div class="BodyPartImage">
+                <img src="../Pic/shoulder.png">
+             </div>
+             <div class="BodyPartTitle">
+              <h1>
+             Shoulder</h1>
+             </div>
+             <div class="BodyPartDes">
+             
+             <button>See Tranings</button>
+             </div>
+             </div>
+             <!--cards -->
+             
+             
+             <div class="BodyPartCard">
+             
+             <div class="BodyPartImage">
+                <img src="../Pic/leg.png">
+             </div>
+             <div class="BodyPartTitle">
+              <h1>
+             Legs</h1>
+             </div>
+             <div class="BodyPartDes">
+             
+             <button>See Tranings</button>
+             </div>
+             </div>
+             <!--cards -->
+             
+             <div class="BodyPartCard">
+             
+              <div class="BodyPartImage">
+                 <img src="../Pic/chest.png">
+              </div>
+              <div class="BodyPartTitle">
+               <h1>
+              Chest</h1>
+              </div>
+              <div class="BodyPartDes">
+              
+              <button>See Tranings</button>
+              </div>
+              </div>
+        
+             </div>
+             
+            
       
       <div class="footer">
   &copy; Jensen Norra Gymnasium | Sushil K C
